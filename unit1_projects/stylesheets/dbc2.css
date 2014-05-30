@@ -9,13 +9,23 @@ body{
 	color: white;
 }
 
-h1{
+	
+.header{
+	text-align: center;
+	width: 80%;
+}
+
+h1, h2{
 	position: relative;
 	border-left: 3px solid white;
 	border-bottom: 4px solid white;
-	width: 250px
+	width: 250px;
+	margin: 10px 20px;
 }
 
+h6{
+	font: 9px;
+}
 #nav{
 	float: right;
 	margin-top: 3.5%;
@@ -32,7 +42,7 @@ h1{
 
 footer{
 	margin-top: 75px;
-	float:right;
+	float:left;
 	vertical-align: bottom;
 
 }
@@ -41,3 +51,7 @@ a:link {color:white;}
 a:visited {color:#C746CC;}
 a:hover {color:#FFF520;}
 a:active {color:#FFF520;}
+
+img{
+	float: right;
+}
