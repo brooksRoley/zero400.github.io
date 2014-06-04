@@ -6,7 +6,8 @@ p{
 body{
 	background-size: cover;
 	background-image: url("../images/ink.jpg");
-	color: white;
+	background-color: yellow;
+	color: black;
 }
 
 	
