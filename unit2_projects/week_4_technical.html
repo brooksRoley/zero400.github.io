@@ -7,11 +7,27 @@
 </head>
 
 <body>
-	<h1>.</h1>
+	<h1>Enumerable#cycle.</h1>
 	<p> 
-			Enumerable#cycle
-
+			Arrays are ordered, integer-indexed collections of any object. They start indexing at 0 and have many gloriously simple pre implemented methods. I am going to take a closer look at Array#cycle today.
 	</p>
+
+	<p>	Ruby documentation says this about cycle
+	</p>
+
+	<p>Calls the given block for each element n times or forever if nil is given.
+
+Does nothing if a non-positive number is given or the array is empty.
+
+Returns nil if the loop has finished without getting interrupted.
+
+If no block is given, an Enumerator is returned instead.
+
+</p>
+
+<p>
+How I perceive this method is that it runs through the array. You get to use a block to do whatever you want to every element of the array. What sets cycle apart is it take as a parameter the number of times you want to traverse the array. If you give it a 2 you get a double. That repeate parameter is defaulted to INFINITY! so be careful not to run an infinite loop. . .
+</p>
 </body>
 
 </html>
