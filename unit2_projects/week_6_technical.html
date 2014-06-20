@@ -1,0 +1,56 @@
+
+<html>
+
+<head>
+	<title>Week 6 Technical Blog</title>
+</head>
+
+<body>
+
+	<h1>Ruby Variable Scope</h1>
+	<h3>
+		<p>What kinds of variables does Ruby support? Where are they accessible? When would you use them and what makes them different?</p>
+	</h3>
+
+	<h2>Local Variables</h2>
+	<p>Local variables are declared inside of blocks and are scrapped to trash collector at the end of the block. These stay only as long as they are told. You can tell a local variable's scope by following a few rules.
+		<br>
+		The top level (outside of all definition blocks) has its own local scope.
+		Every class or module definition block (class, module) has its own local scope, even nested class/module definition blocks.
+		Every method definition (def) has its own local scope.
+	</p>
+
+	<h2>Global Variables</h2>
+	<p>Global Variable begin with $. Uninitilaized global variables default to NIL. These are not recommended as the make a program cryptic but they are accessible from anywhere. You use global variables when you want one number to be constant throught the entire life of the product.  </p>
+
+	<h2>Class Variables</h2>
+	<p>Class variables are created with @@ prefix. This should be used when there is only one value that exists for all objects of the given class. It is a global variable within the context of the class.</p>
+
+
+	<h2>Instance Variables</h2>
+	<p>Instance variables begin with @ and also initialize to nil. They are instantiated every time a new object of the type is created. This is often done in the initialize function. This is accessible by an instance of the class and only changes withing that instance</p>
+
+	<h2> Constant Variables </h2>
+	<p>These should not change throughout your program. These start with capital letters and if they are within a class, they are specific to that class. </p>
+
+	<h2>Basic Literals</h2>
+	<p> 
+		There are a few literals that are worth noting. 
+		<ul>
+			<li>self</li>
+			<li>Booleans</li>
+			<li>Integers</li>
+			<li>Floats</li>
+			<li>Strings</li>
+			<li>Array</li>
+			<li>Hash</li>
+			
+		</ul>
+
+		<h4>
+			If you need to find the scope of a variable, the defined? method takes an object as a parameter and returns its scope. 
+		</h4>
+
+	</body>
+
+	</html>
