@@ -1,0 +1,38 @@
+<html>
+
+<body>
+	
+	<h1> SQL Injection and some simple ways to prevent it</h1>
+	<img src="image/exploits_of_a_mom.png">
+	
+	<p>
+		The layers of web design create a flexible, diversified, and delegated enviornment to comfortably maneuver through a sea of data. Like the rafters of a house, the junctions of these different layers have crevases for bugs to get in and out and live and thrive. Between the user's input and the server's data storage, the bug that commonly resides is SQL Injection.
+	</p>
+
+	<p>
+		<em>Passwords and usernames are status quo and once that combo is found, the jigg is up.</em>
+		<br>
+		Whenever you log any input that you expect to save, thats a call to the database with the SQL language. Your input is packaged up and inserted into a prewritten command that will access the database to find your info and retrieve or save or update. SQL seperates its command with the strings that match. What if you put a quote to end an input then started writing your own SQL after the quote. This could change the whole nature of the database query.......
+	</p>
+	<img src="image/doomsday.gif" alt = "Doomsday..">
+
+	<p>
+		That might not sound like a lot but let me assure you, it is everything. It is like qualifying for the World Cup. It is like the bus to the summit of a mountain. Once you can write your own SQL, the games over. All the passwords and usernames and all the bank accounts of personal data, or telephones, or credit cards, or anything ever stored by their system digitally can be yours.Many admirable young hackers could get hired for finding an exploit like this. Some people aren't as samaritan.
+	</p>
+
+
+	<p>
+		We get ahead of ourselves. Everything isn't free as soon as you can write into the database but you have the tools..The detective work needed to figure out how to shape your SQL queries is not a simple task but conventions about how to organize different database structures is well known and engrained. It doesn't suprise anyone that most have id, name, email, phone, or specifics you could probably guess from a quick google about the company. You could usually find emails or names about important people who would have the right accesses that you as a hacker are looking to exploit. 
+	</p>
+
+	<p>
+		There are a few steps that significantly help reduce these attacks. Some people try to start by cleaning the input of things like quotes and semi colons ""  ;  but there are different values and escape characters that can mess around with this tactic of defense. The best way is with the SQL command used in transplanting the user input into. Use a SQL parameter that will be added to an SQL query at execution time in a controlled maner. Without the ability to end the current Sql parameter with a quote or command with a ; the user cant run direct commands on the system. No snooping, no changes. Also, making writing to the Database allowed from all users is another way to cut down on the risk. 
+	</p>
+
+<h3> Sources </h3>
+<a href="http://www.unixwiz.net/techtips/sql-injection.html">Attacks by Example</a>
+<a href="http://www.w3schools.com/sql/sql_injection.asp">W3's Article</a>
+
+</body>
+
+</html>
